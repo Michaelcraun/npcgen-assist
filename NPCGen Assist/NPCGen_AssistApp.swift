@@ -7,11 +7,17 @@
 
 import SwiftUI
 
+import Firebase
+
 @main
 struct NPCGen_AssistApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
     }
 }
