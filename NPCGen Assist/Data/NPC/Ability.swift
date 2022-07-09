@@ -163,3 +163,14 @@ extension Array where Element == Ability.Modifier {
         return nil
     }
 }
+
+// MARK: - NPCGenAssist specific functionality
+extension Array where Element == Ability.Modifier {
+    func total() -> Int {
+        var total: Int = 0
+        for mod in self {
+            total += mod.modifier
+        }
+        return total
+    }
+}

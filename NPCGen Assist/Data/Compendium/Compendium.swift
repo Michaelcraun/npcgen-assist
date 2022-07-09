@@ -206,7 +206,7 @@ class Compendium: Codable {
         private var twentieth: Data?
         
         /// A list of all Data objects contained within the LevelData object.
-        private var all: [Data?] {
+        var all: [Data?] {
             return [first, second, third, fourth, fifth,
                     sixth, seventh, eighth, ninth, tenth,
                     eleventh, twelfth, thirteenth, fourteenth, fifteenth,
@@ -289,4 +289,28 @@ extension Array where Element == Compendium.ChallengeModifier {
             return baseValue
         }
     }
+}
+
+// MARK: - NPCGen Assist specific functionality
+extension Compendium.LevelData {
+    var _first: Data? { return first }
+    var _second: Data? { return second }
+    var _third: Data? { return third }
+    var _fourth: Data? { return fourth }
+    var _fifth: Data? { return fifth }
+    var _sixth: Data? { return sixth }
+    var _seventh: Data? { return seventh }
+    var _eighth: Data? { return eighth }
+    var _ninth: Data? { return ninth }
+    var _tenth: Data? { return tenth }
+    var _eleventh: Data? { return eleventh }
+    var _twelfth: Data? { return twelfth }
+    var _thirteenth: Data? { return thirteenth }
+    var _fourteenth: Data? { return fourteenth }
+    var _fifteenth: Data? { return fifteenth }
+    var _sixteenth: Data? { return sixteenth }
+    var _seventeenth: Data? { return seventeenth }
+    var _eighteenth: Data? { return eighteenth }
+    var _nineteenth: Data? { return nineteenth }
+    var _twentieth: Data? { return twentieth }
 }

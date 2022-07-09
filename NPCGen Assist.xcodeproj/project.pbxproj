@@ -17,7 +17,6 @@
 		9B79290F28116D700098DCA0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79290E28116D700098DCA0 /* FirebaseAuth */; };
 		9B79291128116D700098DCA0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79291028116D700098DCA0 /* FirebaseDatabase */; };
 		9B79291328116D700098DCA0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79291228116D700098DCA0 /* FirebaseStorage */; };
-		9B79291528116D9C0098DCA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B79291428116D9C0098DCA0 /* GoogleService-Info.plist */; };
 		9B79291F2811706C0098DCA0 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7929192811706C0098DCA0 /* Race.swift */; };
 		9B7929202811706C0098DCA0 /* Occupation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79291A2811706C0098DCA0 /* Occupation.swift */; };
 		9B7929212811706C0098DCA0 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79291B2811706C0098DCA0 /* Trait.swift */; };
@@ -66,6 +65,7 @@
 		9B792981281173FC0098DCA0 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B792980281173FC0098DCA0 /* Exporter.swift */; };
 		9B792983281174AB0098DCA0 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B792982281174AB0098DCA0 /* Die.swift */; };
 		9B792985281192920098DCA0 /* firebase.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B792984281192910098DCA0 /* firebase.json */; };
+		9B7F965628794B5C008A1861 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B7F965528794B5B008A1861 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,6 @@
 		9B7928FA28116CBD0098DCA0 /* NPCGen AssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NPCGen AssistUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7928FE28116CBD0098DCA0 /* NPCGen_AssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGen_AssistUITests.swift; sourceTree = "<group>"; };
 		9B79290028116CBD0098DCA0 /* NPCGen_AssistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGen_AssistUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9B79291428116D9C0098DCA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B7929192811706C0098DCA0 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		9B79291A2811706C0098DCA0 /* Occupation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupation.swift; sourceTree = "<group>"; };
 		9B79291B2811706C0098DCA0 /* Trait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
@@ -145,6 +144,7 @@
 		9B792980281173FC0098DCA0 /* Exporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
 		9B792982281174AB0098DCA0 /* Die.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		9B792984281192910098DCA0 /* firebase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firebase.json; sourceTree = "<group>"; };
+		9B7F965528794B5B008A1861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,13 +198,13 @@
 		9B7928E228116CBC0098DCA0 /* NPCGen Assist */ = {
 			isa = PBXGroup;
 			children = (
+				9B7F965528794B5B008A1861 /* GoogleService-Info.plist */,
 				9B79297D2811737E0098DCA0 /* Data */,
 				9B79295E281172A20098DCA0 /* Extensions */,
 				9B7928E328116CBC0098DCA0 /* NPCGen_AssistApp.swift */,
 				9B7928E528116CBC0098DCA0 /* ContentView.swift */,
 				9B7928E728116CBD0098DCA0 /* Assets.xcassets */,
 				9B792984281192910098DCA0 /* firebase.json */,
-				9B79291428116D9C0098DCA0 /* GoogleService-Info.plist */,
 				9B7928E928116CBD0098DCA0 /* Preview Content */,
 			);
 			path = "NPCGen Assist";
@@ -441,9 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7928EB28116CBD0098DCA0 /* Preview Assets.xcassets in Resources */,
+				9B7F965628794B5C008A1861 /* GoogleService-Info.plist in Resources */,
 				9B7928E828116CBD0098DCA0 /* Assets.xcassets in Resources */,
 				9B792985281192920098DCA0 /* firebase.json in Resources */,
-				9B79291528116D9C0098DCA0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -284,7 +284,10 @@ class FirebaseCompendium: FirebaseManager {
             }
         }
     }
-    
+}
+
+// MARK: - NPCGen Assist specific functionality
+extension FirebaseCompendium {
     func updateChallengeRatings(completion: @escaping ChallengeCompletion) {
         // 1. Iterate through all possible combinations of Occupation, Race, and levels
         let occupations = Compendium.instance.occupations
@@ -326,6 +329,17 @@ class FirebaseCompendium: FirebaseManager {
         
         dispatch.notify(queue: .main) {
             completion()
+        }
+    }
+    
+    func fetchOccupation(uid: String, completion: @escaping ([String : Any]?) -> Void) {
+        ref_coreDatabase.child("occupation").child(uid).getData { error, snap in
+            if let error = error {
+                print(error)
+                return completion(nil)
+            }
+            
+            completion(snap.value as? [String : Any])
         }
     }
 }
