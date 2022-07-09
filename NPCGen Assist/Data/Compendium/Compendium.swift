@@ -313,4 +313,55 @@ extension Compendium.LevelData {
     var _eighteenth: Data? { return eighteenth }
     var _nineteenth: Data? { return nineteenth }
     var _twentieth: Data? { return twentieth }
+    
+    init(data: [Int : Data]) {
+        self.first = data[1]
+        self.second = data[2]
+        self.third = data[3]
+        self.fourth = data[4]
+        self.fifth = data[5]
+        self.sixth = data[6]
+        self.seventh = data[7]
+        self.eighth = data[8]
+        self.ninth = data[9]
+        self.tenth = data[10]
+        self.eleventh = data[11]
+        self.twelfth = data[12]
+        self.thirteenth = data[13]
+        self.fourteenth = data[14]
+        self.fifteenth = data[15]
+        self.sixteenth = data[16]
+        self.seventeenth = data[17]
+        self.eighteenth = data[18]
+        self.nineteenth = data[19]
+        self.twentieth = data[20]
+    }
+}
+
+extension Compendium.LevelData.Data {
+    init(
+        level: Int,
+        title: String,
+        abilityModifiers: [Ability.Modifier],
+        saves: [SavingThrow],
+        skills: [Skill],
+        
+        armors: [String]? = nil,
+        challengeModifiers: [String]? = nil,        // Challenge.Modifier
+        conditionImmunities: [String]? = nil,
+        damageResistances: [String]? = nil,
+        traits: [String]? = nil,
+        truesight: Int? = nil) {
+            self._abilityModifiers = abilityModifiers.map({ "\($0.comparableValue) \($0.modifier.modifier)" })
+            self._armorProficiencies = armors
+            self._challengeModifiers = challengeModifiers
+            self._conditionImmunities = conditionImmunities
+            self._damageResistances = damageResistances
+            self._saves = saves.map({ $0.comparableValue })
+            self._skills = skills.map({ $0.rawValue })
+            self._traits = traits
+            self.level = level
+            self.title = title
+            self.truesight = truesight
+        }
 }

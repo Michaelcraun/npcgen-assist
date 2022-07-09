@@ -12,8 +12,6 @@
 		9B7928E828116CBD0098DCA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7928E728116CBD0098DCA0 /* Assets.xcassets */; };
 		9B7928EB28116CBD0098DCA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7928EA28116CBD0098DCA0 /* Preview Assets.xcassets */; };
 		9B7928F528116CBD0098DCA0 /* NPCGen_AssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7928F428116CBD0098DCA0 /* NPCGen_AssistTests.swift */; };
-		9B7928FF28116CBD0098DCA0 /* NPCGen_AssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7928FE28116CBD0098DCA0 /* NPCGen_AssistUITests.swift */; };
-		9B79290128116CBD0098DCA0 /* NPCGen_AssistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79290028116CBD0098DCA0 /* NPCGen_AssistUITestsLaunchTests.swift */; };
 		9B79290F28116D700098DCA0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79290E28116D700098DCA0 /* FirebaseAuth */; };
 		9B79291128116D700098DCA0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79291028116D700098DCA0 /* FirebaseDatabase */; };
 		9B79291328116D700098DCA0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B79291228116D700098DCA0 /* FirebaseStorage */; };
@@ -66,6 +64,10 @@
 		9B792983281174AB0098DCA0 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B792982281174AB0098DCA0 /* Die.swift */; };
 		9B792985281192920098DCA0 /* firebase.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B792984281192910098DCA0 /* firebase.json */; };
 		9B7F965628794B5C008A1861 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B7F965528794B5B008A1861 /* GoogleService-Info.plist */; };
+		9B7F96B428799078008A1861 /* NPCGenAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7F96B328799078008A1861 /* NPCGenAssistTests.swift */; };
+		9B7F96BB287992A4008A1861 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7F96BA287992A4008A1861 /* BundleExtension.swift */; };
+		9B7F96BD28799352008A1861 /* GenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7F96BC28799352008A1861 /* GenerationTests.swift */; };
+		9BBE05D12879B99C00F9A417 /* GoogleService-Info-DEBUG.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE05D02879B99C00F9A417 /* GoogleService-Info-DEBUG.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +78,7 @@
 			remoteGlobalIDString = 9B7928DF28116CBC0098DCA0;
 			remoteInfo = "NPCGen Assist";
 		};
-		9B7928FB28116CBD0098DCA0 /* PBXContainerItemProxy */ = {
+		9B7F96B528799078008A1861 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B7928D828116CBC0098DCA0 /* Project object */;
 			proxyType = 1;
@@ -93,7 +95,6 @@
 		9B7928EA28116CBD0098DCA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B7928F028116CBD0098DCA0 /* NPCGen AssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NPCGen AssistTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7928F428116CBD0098DCA0 /* NPCGen_AssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGen_AssistTests.swift; sourceTree = "<group>"; };
-		9B7928FA28116CBD0098DCA0 /* NPCGen AssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NPCGen AssistUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7928FE28116CBD0098DCA0 /* NPCGen_AssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGen_AssistUITests.swift; sourceTree = "<group>"; };
 		9B79290028116CBD0098DCA0 /* NPCGen_AssistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGen_AssistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B7929192811706C0098DCA0 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -145,6 +146,13 @@
 		9B792982281174AB0098DCA0 /* Die.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		9B792984281192910098DCA0 /* firebase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firebase.json; sourceTree = "<group>"; };
 		9B7F965528794B5B008A1861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B7F96B128799078008A1861 /* NPCGenAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPCGenAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7F96B328799078008A1861 /* NPCGenAssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCGenAssistTests.swift; sourceTree = "<group>"; };
+		9B7F96BA287992A4008A1861 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		9B7F96BC28799352008A1861 /* GenerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationTests.swift; sourceTree = "<group>"; };
+		9BBE05B72879B2E100F9A417 /* NPCGen Assist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NPCGen Assist.entitlements"; sourceTree = "<group>"; };
+		9BBE05B82879B2FD00F9A417 /* NPCGen AssistDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NPCGen AssistDebug.entitlements"; sourceTree = "<group>"; };
+		9BBE05D02879B99C00F9A417 /* GoogleService-Info-DEBUG.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-DEBUG.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B7928F728116CBD0098DCA0 /* Frameworks */ = {
+		9B7F96AE28799078008A1861 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,6 +189,7 @@
 				9B7928E228116CBC0098DCA0 /* NPCGen Assist */,
 				9B7928F328116CBD0098DCA0 /* NPCGen AssistTests */,
 				9B7928FD28116CBD0098DCA0 /* NPCGen AssistUITests */,
+				9B7F96B228799078008A1861 /* NPCGenAssistTests */,
 				9B7928E128116CBC0098DCA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,7 +199,7 @@
 			children = (
 				9B7928E028116CBC0098DCA0 /* NPCGen Assist.app */,
 				9B7928F028116CBD0098DCA0 /* NPCGen AssistTests.xctest */,
-				9B7928FA28116CBD0098DCA0 /* NPCGen AssistUITests.xctest */,
+				9B7F96B128799078008A1861 /* NPCGenAssistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +207,10 @@
 		9B7928E228116CBC0098DCA0 /* NPCGen Assist */ = {
 			isa = PBXGroup;
 			children = (
+				9BBE05B82879B2FD00F9A417 /* NPCGen AssistDebug.entitlements */,
+				9BBE05B72879B2E100F9A417 /* NPCGen Assist.entitlements */,
 				9B7F965528794B5B008A1861 /* GoogleService-Info.plist */,
+				9BBE05D02879B99C00F9A417 /* GoogleService-Info-DEBUG.plist */,
 				9B79297D2811737E0098DCA0 /* Data */,
 				9B79295E281172A20098DCA0 /* Extensions */,
 				9B7928E328116CBC0098DCA0 /* NPCGen_AssistApp.swift */,
@@ -328,6 +340,16 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		9B7F96B228799078008A1861 /* NPCGenAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B7F96BC28799352008A1861 /* GenerationTests.swift */,
+				9B7F96BA287992A4008A1861 /* BundleExtension.swift */,
+				9B7F96B328799078008A1861 /* NPCGenAssistTests.swift */,
+			);
+			path = NPCGenAssistTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -371,23 +393,23 @@
 			productReference = 9B7928F028116CBD0098DCA0 /* NPCGen AssistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9B7928F928116CBD0098DCA0 /* NPCGen AssistUITests */ = {
+		9B7F96B028799078008A1861 /* NPCGenAssistTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B79290A28116CBD0098DCA0 /* Build configuration list for PBXNativeTarget "NPCGen AssistUITests" */;
+			buildConfigurationList = 9B7F96B728799078008A1861 /* Build configuration list for PBXNativeTarget "NPCGenAssistTests" */;
 			buildPhases = (
-				9B7928F628116CBD0098DCA0 /* Sources */,
-				9B7928F728116CBD0098DCA0 /* Frameworks */,
-				9B7928F828116CBD0098DCA0 /* Resources */,
+				9B7F96AD28799078008A1861 /* Sources */,
+				9B7F96AE28799078008A1861 /* Frameworks */,
+				9B7F96AF28799078008A1861 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B7928FC28116CBD0098DCA0 /* PBXTargetDependency */,
+				9B7F96B628799078008A1861 /* PBXTargetDependency */,
 			);
-			name = "NPCGen AssistUITests";
-			productName = "NPCGen AssistUITests";
-			productReference = 9B7928FA28116CBD0098DCA0 /* NPCGen AssistUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = NPCGenAssistTests;
+			productName = NPCGenAssistTests;
+			productReference = 9B7F96B128799078008A1861 /* NPCGenAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -406,7 +428,7 @@
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 9B7928DF28116CBC0098DCA0;
 					};
-					9B7928F928116CBD0098DCA0 = {
+					9B7F96B028799078008A1861 = {
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 9B7928DF28116CBC0098DCA0;
 					};
@@ -430,7 +452,7 @@
 			targets = (
 				9B7928DF28116CBC0098DCA0 /* NPCGen Assist */,
 				9B7928EF28116CBD0098DCA0 /* NPCGen AssistTests */,
-				9B7928F928116CBD0098DCA0 /* NPCGen AssistUITests */,
+				9B7F96B028799078008A1861 /* NPCGenAssistTests */,
 			);
 		};
 /* End PBXProject section */
@@ -440,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBE05D12879B99C00F9A417 /* GoogleService-Info-DEBUG.plist in Resources */,
 				9B7928EB28116CBD0098DCA0 /* Preview Assets.xcassets in Resources */,
 				9B7F965628794B5C008A1861 /* GoogleService-Info.plist in Resources */,
 				9B7928E828116CBD0098DCA0 /* Assets.xcassets in Resources */,
@@ -454,7 +477,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B7928F828116CBD0098DCA0 /* Resources */ = {
+		9B7F96AF28799078008A1861 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,12 +551,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B7928F628116CBD0098DCA0 /* Sources */ = {
+		9B7F96AD28799078008A1861 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B79290128116CBD0098DCA0 /* NPCGen_AssistUITestsLaunchTests.swift in Sources */,
-				9B7928FF28116CBD0098DCA0 /* NPCGen_AssistUITests.swift in Sources */,
+				9B7F96BD28799352008A1861 /* GenerationTests.swift in Sources */,
+				9B7F96B428799078008A1861 /* NPCGenAssistTests.swift in Sources */,
+				9B7F96BB287992A4008A1861 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,10 +569,10 @@
 			target = 9B7928DF28116CBC0098DCA0 /* NPCGen Assist */;
 			targetProxy = 9B7928F128116CBD0098DCA0 /* PBXContainerItemProxy */;
 		};
-		9B7928FC28116CBD0098DCA0 /* PBXTargetDependency */ = {
+		9B7F96B628799078008A1861 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9B7928DF28116CBC0098DCA0 /* NPCGen Assist */;
-			targetProxy = 9B7928FB28116CBD0098DCA0 /* PBXContainerItemProxy */;
+			targetProxy = 9B7F96B528799078008A1861 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -604,6 +628,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -658,6 +683,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -672,6 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NPCGen Assist/NPCGen AssistDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NPCGen Assist/Preview Content\"";
@@ -690,9 +717,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.craunincproductions.NPCGen-Assist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -701,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NPCGen Assist/NPCGen Assist.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NPCGen Assist/Preview Content\"";
@@ -719,9 +748,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.craunincproductions.NPCGen-Assist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -765,39 +795,39 @@
 			};
 			name = Release;
 		};
-		9B79290B28116CBD0098DCA0 /* Debug */ = {
+		9B7F96B828799078008A1861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96SB47X67B;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.craunincproductions.NPCGen-AssistUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craunincproductions.NPCGenAssistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "NPCGen Assist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPCGen Assist.app/NPCGen Assist";
 			};
 			name = Debug;
 		};
-		9B79290C28116CBD0098DCA0 /* Release */ = {
+		9B7F96B928799078008A1861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96SB47X67B;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.craunincproductions.NPCGen-AssistUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craunincproductions.NPCGenAssistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "NPCGen Assist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPCGen Assist.app/NPCGen Assist";
 			};
 			name = Release;
 		};
@@ -831,11 +861,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B79290A28116CBD0098DCA0 /* Build configuration list for PBXNativeTarget "NPCGen AssistUITests" */ = {
+		9B7F96B728799078008A1861 /* Build configuration list for PBXNativeTarget "NPCGenAssistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B79290B28116CBD0098DCA0 /* Debug */,
-				9B79290C28116CBD0098DCA0 /* Release */,
+				9B7F96B828799078008A1861 /* Debug */,
+				9B7F96B928799078008A1861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

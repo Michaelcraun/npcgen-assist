@@ -34,6 +34,12 @@ class Occupation: Codable, Identifiable, Levelable {
         return (_weaponProficiencies ?? []).compactMap({ Compendium.instance.weapons[$0] }) + typeWeapons
     }
     
+    init() {
+        self.filterDescription = ""
+        self.filterTitle = ""
+        self.identifier = ""
+    }
+    
     /// Constructs a ClosedRange of Challenge objects that the Occupation object can generate for filtration.
     /// - Parameters:
     ///   - lowLevel: The lowest level for generation.
@@ -69,8 +75,19 @@ class Occupation: Codable, Identifiable, Levelable {
     }
 }
 
+// MARK: - NPCGen Assist specific functionality
 extension Occupation {
     typealias ChallengeCompletion = () -> Void
+    
+    convenience init(name: String, description: String, armors: [String], weapons: [String], levelData: Compendium.LevelData) {
+        self.init()
+        self._armorProficiencies = armors
+        self._weaponProficiencies = weapons
+        self.data = levelData
+        self.filterTitle = name.capitalized
+        self.filterDescription = description
+        self.identifier = name.lowercased()
+    }
     
     func update(challenge rating: Challenge, completion: @escaping ChallengeCompletion) {
         let currentLow = lowChallenge

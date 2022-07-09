@@ -288,6 +288,15 @@ class FirebaseCompendium: FirebaseManager {
 
 // MARK: - NPCGen Assist specific functionality
 extension FirebaseCompendium {
+    typealias CoreDatabaseUploadCompletion = (Error?, DatabaseReference) -> Void
+    
+    private func put(data: [String : Any], on child: String, withUID uid: String, completion: @escaping CoreDatabaseUploadCompletion) {
+        let ref = ref_coreDatabase.child(child).child(uid)
+        ref.updateChildValues(data, withCompletionBlock: completion)
+    }
+    
+//    private func removeData
+    
     func updateChallengeRatings(completion: @escaping ChallengeCompletion) {
         // 1. Iterate through all possible combinations of Occupation, Race, and levels
         let occupations = Compendium.instance.occupations
@@ -342,4 +351,22 @@ extension FirebaseCompendium {
             completion(snap.value as? [String : Any])
         }
     }
+    
+    func putAction(uid: String, data: [String : Any], completion: @escaping CoreDatabaseUploadCompletion) {
+        put(data: data, on: "action", withUID: uid, completion: completion)
+    }
+    
+    func putOccupation(uid: String, data: [String : Any], completion: @escaping CoreDatabaseUploadCompletion) {
+        put(data: data, on: "occupation", withUID: uid, completion: completion)
+    }
+    
+    func putTrait(uid: String, data: [String : Any], completion: @escaping CoreDatabaseUploadCompletion) {
+        put(data: data, on: "trait", withUID: uid, completion: completion)
+    }
+    
+//    func removeAction
+//
+//    func removeOccupation
+//
+//    func removeTrait
 }

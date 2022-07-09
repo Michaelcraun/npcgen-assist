@@ -1,0 +1,463 @@
+{
+    "occupation": {
+        "_armorProficiencies": [
+            ""
+        ],
+        "_weaponProficiencies": [
+            ""
+        ],
+        "data": {
+            "first": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 1,
+                "title": "",
+                "truesight": 0
+            },
+            "second": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 2,
+                "title": "",
+                "truesight": 0
+            },
+            "third": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 3,
+                "title": "",
+                "truesight": 0
+            },
+            "fourth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 4,
+                "title": "",
+                "truesight": 0
+            },
+            "fifth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 5,
+                "title": "",
+                "truesight": 0
+            },
+            "sixth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 6,
+                "title": "",
+                "truesight": 0
+            },
+            "seventh": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 7,
+                "title": "",
+                "truesight": 0
+            },
+            "eighth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 8,
+                "title": "",
+                "truesight": 0
+            },
+            "ninth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 9,
+                "title": "",
+                "truesight": 0
+            },
+            "tenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 10,
+                "title": "",
+                "truesight": 0
+            },
+            "eleventh": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 11,
+                "title": "",
+                "truesight": 0
+            },
+            "twelfth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 12,
+                "title": "",
+                "truesight": 0
+            },
+            "thirteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 13,
+                "title": "",
+                "truesight": 0
+            },
+            "fourteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 14,
+                "title": "",
+                "truesight": 10
+            },
+            "fifteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 15,
+                "title": "",
+                "truesight": 10
+            },
+            "sixteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 16,
+                "title": "",
+                "truesight": 10
+            },
+            "seventeenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 17,
+                "title": "",
+                "truesight": 0
+            },
+            "eighteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 18,
+                "title": "",
+                "truesight": 0
+            },
+            "nineteenth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 19,
+                "title": "",
+                "truesight": 10
+            },
+            "twentieth": {
+                "_abilityModifiers": [
+                    ""
+                ],
+                "_challengeModifiers": [
+                    ""
+                ],
+                "_highChallenge": "",
+                "_lowChallenge": "",
+                "_saves": [
+                    ""
+                ],
+                "_skills": [
+                    ""
+                ],
+                "_traits": [
+                    ""
+                ],
+                "level": 20,
+                "title": "",
+                "truesight": 0
+            }
+        },
+        "filterDescription": "",
+        "filterTitle": "",
+        "highChallenge": "",
+        "identifier": "",
+        "lowChallenge": ""
+    },
+    "traits": [
+        {}
+    ],
+    "actions": [
+        {}
+    ],
+}

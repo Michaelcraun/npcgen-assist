@@ -86,10 +86,7 @@ class NPCGen_AssistTests: XCTestCase {
             }
             
             print(collatedData)
-            
-            dispatchGroup.notify(queue: .main) {
-                expectation.fulfill()
-            }
+            expectation.fulfill()
         }
         wait(for: [expectation], timeout: 15)
     }
