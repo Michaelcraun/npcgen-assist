@@ -9,8 +9,8 @@
 import Foundation
 
 class Occupation: Codable, Identifiable, Levelable {
-    private var _armorProficiencies: [String]?
-    private var _weaponProficiencies: [String]?
+    var _armorProficiencies: [String]?
+    var _weaponProficiencies: [String]?
     
     var filterDescription: String
     var filterTitle: String

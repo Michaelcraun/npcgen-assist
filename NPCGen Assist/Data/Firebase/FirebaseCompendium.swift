@@ -6,7 +6,8 @@
 //  Copyright © 2020 Craunic Productions. All rights reserved.
 //
 
-import Firebase
+import Foundation
+import FireStorage
 
 fileprivate extension FirebaseManager.Key {
     enum Core: Int, FirebaseKey {
@@ -42,13 +43,6 @@ class FirebaseCompendium: FirebaseManager {
     ///  - success: A boolean to indicate whether or not the operation was successful.
     ///  - error: Any error encountered while completing the operation.
     typealias CompendiumCompletion = (_ success: Bool, _ error: Error?) -> Void
-    
-    /// A hard reference to the core database on the Firebase database.
-    private var ref_coreDatabase: DatabaseReference
-    
-    override init() {
-        ref_coreDatabase = Database.database().reference().child(Key.database.key).child(Key.coreDB.key)
-    }
     
     /// Initializes the user's personal compendium, throwing an error if any are encountered.
     /// - Parameter completion: The completion handler designating if the operation failed or succeeded.
@@ -118,169 +112,57 @@ class FirebaseCompendium: FirebaseManager {
     }
     
     private func fetchActions(completion: @escaping ([Action], Error?) -> Void) {
-        ref_coreDatabase.child("action").observeSingleEvent(of: .value) { (snapshot) in
-            var actions = [Action]()
-            guard let actionSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(actions, "Unable to find data!")
-                return
-            }
-            
-            for snap in actionSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let action = try JSONDecoder().decode(Action.self, from: json)
-                    actions.append(action)
-                    
-                    if snap == actionSnapshot.last {
-                        completion(actions, nil)
-                    }
-                } catch let error {
-                    completion(actions, "ACTIONS: \(error)")
-                }
+        Store.database.actions.getAll(ofType: Action.self) { actions, error in
+            if let actions = actions, error == nil {
+                completion(actions, nil)
             }
         }
     }
     
     private func fetchArmor(completion: @escaping ([Armor], Error?) -> Void) {
-        ref_coreDatabase.child("armor").observeSingleEvent(of: .value) { (snapshot) in
-            var armors = [Armor]()
-            guard let armorSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(armors, "Unable to find data!")
-                return
-            }
-            
-            for snap in armorSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let armor = try JSONDecoder().decode(Armor.self, from: json)
-                    armors.append(armor)
-                    
-                    if snap == armorSnapshot.last {
-                        completion(armors, nil)
-                    }
-                } catch let error {
-                    completion(armors, "ARMOR: \(error)")
-                }
+        Store.database.armors.getAll(ofType: Armor.self) { armors, error in
+            if let armors = armors, error == nil {
+                completion(armors, nil)
             }
         }
     }
     
     private func fetchOccupations(completion: @escaping ([Occupation], Error?) -> Void) {
-        ref_coreDatabase.child("occupation").observeSingleEvent(of: .value) { (snapshot) in
-            var occupations = [Occupation]()
-            guard let occupationSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(occupations, "Unable to find data!")
-                return
-            }
-            
-            for snap in occupationSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let occupation = try JSONDecoder().decode(Occupation.self, from: json)
-                    occupations.append(occupation)
-                    
-                    if snap == occupationSnapshot.last {
-                        completion(occupations, nil)
-                    }
-                } catch let error {
-                    completion(occupations, "OCCUPATIONS: \(error)")
-                }
+        Store.database.occupations.getAll(ofType: Occupation.self) { occupations, error in
+            if let occupations = occupations, error == nil {
+                completion(occupations, nil)
             }
         }
     }
     
     private func fetchRaces(completion: @escaping ([Race], Error?) -> Void) {
-        ref_coreDatabase.child("race").observeSingleEvent(of: .value) { (snapshot) in
-            var races = [Race]()
-            guard let raceSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(races, "Unable to find data!")
-                return
-            }
-            
-            for snap in raceSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let race = try JSONDecoder().decode(Race.self, from: json)
-                    races.append(race)
-                    
-                    if snap == raceSnapshot.last {
-                        completion(races, nil)
-                    }
-                } catch let error {
-                    completion(races, "RACES: \(error)")
-                }
+        Store.database.races.getAll(ofType: Race.self) { races, error in
+            if let races = races, error == nil {
+                completion(races, nil)
             }
         }
     }
     
     private func fetchSubraces(completion: @escaping ([Race.Subrace], Error?) -> Void) {
-        ref_coreDatabase.child("subrace").observeSingleEvent(of: .value) { (snapshot) in
-            var subraces = [Race.Subrace]()
-            guard let subraceSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(subraces, "Unable to find data!")
-                return
-            }
-            
-            for snap in subraceSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let subrace = try JSONDecoder().decode(Race.Subrace.self, from: json)
-                    subraces.append(subrace)
-                    
-                    if snap == subraceSnapshot.last {
-                        completion(subraces, nil)
-                    }
-                } catch let error {
-                    completion(subraces, "SUBRACES: \(error)")
-                }
+        Store.database.subraces.getAll(ofType: Race.Subrace.self) { subraces, error in
+            if let subraces = subraces, error == nil {
+                completion(subraces, nil)
             }
         }
     }
     
     private func fetchTraits(completion: @escaping ([Trait], Error?) -> Void) {
-        ref_coreDatabase.child("trait").observeSingleEvent(of: .value) { (snapshot) in
-            var traits = [Trait]()
-            guard let subraceSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(traits, "Unable to find data!")
-                return
-            }
-            
-            for snap in subraceSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let trait = try JSONDecoder().decode(Trait.self, from: json)
-                    traits.append(trait)
-                    
-                    if snap == subraceSnapshot.last {
-                        completion(traits, nil)
-                    }
-                } catch let error {
-                    completion(traits, "TRAITS: \(error)")
-                }
+        Store.database.traits.getAll(ofType: Trait.self) { traits, error in
+            if let traits = traits, error == nil {
+                completion(traits, nil)
             }
         }
     }
     
     private func fetchWeapons(completion: @escaping ([Action], Error?) -> Void) {
-        ref_coreDatabase.child("weapon").observeSingleEvent(of: .value) { (snapshot) in
-            var weapons = [Action]()
-            guard let subraceSnapshot = snapshot.children.allObjects as? [DataSnapshot] else {
-                completion(weapons, "Unable to find data!")
-                return
-            }
-            
-            for snap in subraceSnapshot {
-                do {
-                    let json = try JSONSerialization.data(withJSONObject: snap.value!, options: .prettyPrinted)
-                    let action = try JSONDecoder().decode(Action.self, from: json)
-                    weapons.append(action)
-                    
-                    if snap == subraceSnapshot.last {
-                        completion(weapons, nil)
-                    }
-                } catch let error {
-                    completion(weapons, "WEAPONS: \(error)")
-                }
+        Store.database.weapons.getAll(ofType: Action.self) { weapons, error in
+            if let weapons = weapons, error == nil {
+                completion(weapons, nil)
             }
         }
     }
@@ -288,14 +170,12 @@ class FirebaseCompendium: FirebaseManager {
 
 // MARK: - NPCGen Assist specific functionality
 extension FirebaseCompendium {
-    typealias CoreDatabaseUploadCompletion = (Error?, DatabaseReference) -> Void
+    typealias CoreDatabaseUploadCompletion = (Error?, Error?) -> Void
     
     private func put(data: [String : Any], on child: String, withUID uid: String, completion: @escaping CoreDatabaseUploadCompletion) {
-        let ref = ref_coreDatabase.child(child).child(uid)
-        ref.updateChildValues(data, withCompletionBlock: completion)
+//        let ref = ref_coreDatabase.child(child).child(uid)
+//        ref.updateChildValues(data, withCompletionBlock: completion)
     }
-    
-//    private func removeData
     
     func updateChallengeRatings(completion: @escaping ChallengeCompletion) {
         // 1. Iterate through all possible combinations of Occupation, Race, and levels
@@ -342,14 +222,14 @@ extension FirebaseCompendium {
     }
     
     func fetchOccupation(uid: String, completion: @escaping ([String : Any]?) -> Void) {
-        ref_coreDatabase.child("occupation").child(uid).getData { error, snap in
-            if let error = error {
-                print(error)
-                return completion(nil)
-            }
-            
-            completion(snap.value as? [String : Any])
-        }
+//        ref_coreDatabase.child("occupation").child(uid).getData { error, snap in
+//            if let error = error {
+//                print(error)
+//                return completion(nil)
+//            }
+//            
+//            completion(snap.value as? [String : Any])
+//        }
     }
     
     func putAction(uid: String, data: [String : Any], completion: @escaping CoreDatabaseUploadCompletion) {

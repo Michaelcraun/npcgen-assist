@@ -93,9 +93,9 @@ struct Action: Codable, Identifiable {
         }
     }
     
-    private var _damageDie: String?
-    private var _damageType: String?
-    private var _weaponType: String?
+    var _damageDie: String?
+    var _damageType: String?
+    var _weaponType: String?
     
     var identifier: String
     

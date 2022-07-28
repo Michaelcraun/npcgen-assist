@@ -18,7 +18,7 @@ struct Armor: Codable, Identifiable {
         case shield
     }
     
-    private var _type: String
+    var _type: String
     
     var identifier: String
     

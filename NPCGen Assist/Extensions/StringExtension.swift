@@ -8,10 +8,6 @@
 
 import Foundation
 
-extension String: LocalizedError {
-    public var errorDescription: String? { return self }
-}
-
 extension String {
     subscript (bounds: CountableClosedRange<Int>) -> Substring {
         let start = index(startIndex, offsetBy: bounds.lowerBound)

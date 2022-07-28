@@ -9,17 +9,17 @@
 import Foundation
 
 class Race: Codable, Identifiable, Levelable {
-    private var _abilityModifiers: [String]?
-    private var _damageResistances: [String]?
-    private var _languages: [String]?
-    private var _size: String
-    private var _skills: [String]?
-    private var _specialFeatures: [String]?
-    private var _subraces: [String]?
-    private var _weaponProficiencies: [String]?
-    private var familyNames: [String]?
-    private var femaleNames: [String]?
-    private var maleNames: [String]?
+    var _abilityModifiers: [String]?
+    var _damageResistances: [String]?
+    var _languages: [String]?
+    var _size: String
+    var _skills: [String]?
+    var _specialFeatures: [String]?
+    var _subraces: [String]?
+    var _weaponProficiencies: [String]?
+    var familyNames: [String]?
+    var femaleNames: [String]?
+    var maleNames: [String]?
     
     var data: Compendium.LevelData?
     var filterDescription: String
@@ -128,12 +128,12 @@ class Race: Codable, Identifiable, Levelable {
     }
     
     struct Subrace: Codable, Identifiable, Levelable {
-        private var _abilityModifiers: [String]?
-        private var _actions: [String]?
-        private var _armorProficiencies: [String]?
-        private var _damageResistances: [String]?
-        private var _specialFeatures: [String]?
-        private var _weaponProficiencies: [String]?
+        var _abilityModifiers: [String]?
+        var _actions: [String]?
+        var _armorProficiencies: [String]?
+        var _damageResistances: [String]?
+        var _specialFeatures: [String]?
+        var _weaponProficiencies: [String]?
         
         var data: Compendium.LevelData?
         var identifier: String

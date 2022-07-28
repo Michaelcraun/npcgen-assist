@@ -126,13 +126,13 @@ class Compendium: Codable {
                 return lhs.level < rhs.level
             }
             
-            private var _abilityModifiers: [String]?
-            private var _armorProficiencies: [String]?
-            private var _conditionImmunities: [String]?
-            private var _damageResistances: [String]?
-            private var _saves: [String]?
-            private var _skills: [String]?
-            private var _traits: [String]?
+            var _abilityModifiers: [String]?
+            var _armorProficiencies: [String]?
+            var _conditionImmunities: [String]?
+            var _damageResistances: [String]?
+            var _saves: [String]?
+            var _skills: [String]?
+            var _traits: [String]?
             
             /// A list of challenge modifiers associated with the Data object, if any (only present with Occupation objects).
             var _challengeModifiers: [String]?
@@ -184,26 +184,26 @@ class Compendium: Codable {
             }
         }
         
-        private var first: Data?
-        private var second: Data?
-        private var third: Data?
-        private var fourth: Data?
-        private var fifth: Data?
-        private var sixth: Data?
-        private var seventh: Data?
-        private var eighth: Data?
-        private var ninth: Data?
-        private var tenth: Data?
-        private var eleventh: Data?
-        private var twelfth: Data?
-        private var thirteenth: Data?
-        private var fourteenth: Data?
-        private var fifteenth: Data?
-        private var sixteenth: Data?
-        private var seventeenth: Data?
-        private var eighteenth: Data?
-        private var nineteenth: Data?
-        private var twentieth: Data?
+        var first: Data?
+        var second: Data?
+        var third: Data?
+        var fourth: Data?
+        var fifth: Data?
+        var sixth: Data?
+        var seventh: Data?
+        var eighth: Data?
+        var ninth: Data?
+        var tenth: Data?
+        var eleventh: Data?
+        var twelfth: Data?
+        var thirteenth: Data?
+        var fourteenth: Data?
+        var fifteenth: Data?
+        var sixteenth: Data?
+        var seventeenth: Data?
+        var eighteenth: Data?
+        var nineteenth: Data?
+        var twentieth: Data?
         
         /// A list of all Data objects contained within the LevelData object.
         var all: [Data?] {
